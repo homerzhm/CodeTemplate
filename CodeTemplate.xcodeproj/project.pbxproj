@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F15B751A1CBF2EE000657437 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B75191CBF2EE000657437 /* main.m */; };
+		F15B751D1CBF2EE000657437 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B751C1CBF2EE000657437 /* AppDelegate.m */; };
+		F15B75201CBF2EE000657437 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B751F1CBF2EE000657437 /* ViewController.m */; };
+		F15B75231CBF2EE000657437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15B75211CBF2EE000657437 /* Main.storyboard */; };
+		F15B75261CBF2EE000657437 /* CodeTemplate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F15B75241CBF2EE000657437 /* CodeTemplate.xcdatamodeld */; };
+		F15B75281CBF2EE000657437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15B75271CBF2EE000657437 /* Assets.xcassets */; };
+		F15B752B1CBF2EE000657437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15B75291CBF2EE000657437 /* LaunchScreen.storyboard */; };
+		F15B75361CBF2EE000657437 /* CodeTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B75351CBF2EE000657437 /* CodeTemplateTests.m */; };
+		F15B75411CBF2EE000657437 /* CodeTemplateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B75401CBF2EE000657437 /* CodeTemplateUITests.m */; };
+		F15B75571CBF345200657437 /* MainRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B75551CBF345200657437 /* MainRouteViewController.m */; };
+		F15B75581CBF345200657437 /* MainRouteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15B75561CBF345200657437 /* MainRouteViewController.xib */; };
+		F15B755E1CBF3DEC00657437 /* TemplateUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B755D1CBF3DEC00657437 /* TemplateUtility.m */; };
+		F15B75651CBF487100657437 /* ActivityTemplateController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B75631CBF487100657437 /* ActivityTemplateController.m */; };
+		F15B75661CBF487100657437 /* ActivityTemplateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15B75641CBF487100657437 /* ActivityTemplateController.xib */; };
+		F15B756A1CBF494300657437 /* ActivityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B75691CBF494300657437 /* ActivityItem.m */; };
+		F19ACE171CCD2EA500108321 /* KeyboardInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19ACE151CCD2EA500108321 /* KeyboardInputViewController.m */; };
+		F19ACE181CCD2EA500108321 /* KeyboardInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19ACE161CCD2EA500108321 /* KeyboardInputViewController.xib */; };
+		F19ACE1D1CCD2EDE00108321 /* HInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19ACE1B1CCD2EDE00108321 /* HInputViewController.m */; };
+		F19ACE1E1CCD2EDE00108321 /* HInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19ACE1C1CCD2EDE00108321 /* HInputViewController.xib */; };
+		F1C7E4331CC2BF66008F3340 /* ComponentsTemplateController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C7E4311CC2BF66008F3340 /* ComponentsTemplateController.m */; };
+		F1C7E4341CC2BF66008F3340 /* ComponentsTemplateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1C7E4321CC2BF66008F3340 /* ComponentsTemplateController.xib */; };
+		F1C7E4381CC2C139008F3340 /* CustomizedLayoutCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C7E4361CC2C139008F3340 /* CustomizedLayoutCollectionViewController.m */; };
+		F1C7E4391CC2C139008F3340 /* CustomizedLayoutCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1C7E4371CC2C139008F3340 /* CustomizedLayoutCollectionViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F15B75321CBF2EE000657437 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F15B750D1CBF2EE000657437 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F15B75141CBF2EE000657437;
+			remoteInfo = CodeTemplate;
+		};
+		F15B753D1CBF2EE000657437 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F15B750D1CBF2EE000657437 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F15B75141CBF2EE000657437;
+			remoteInfo = CodeTemplate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F15B75151CBF2EE000657437 /* CodeTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15B75191CBF2EE000657437 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F15B751B1CBF2EE000657437 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F15B751C1CBF2EE000657437 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F15B751E1CBF2EE000657437 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F15B751F1CBF2EE000657437 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F15B75221CBF2EE000657437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F15B75251CBF2EE000657437 /* CodeTemplate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CodeTemplate.xcdatamodel; sourceTree = "<group>"; };
+		F15B75271CBF2EE000657437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F15B752A1CBF2EE000657437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F15B752C1CBF2EE000657437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15B75311CBF2EE000657437 /* CodeTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15B75351CBF2EE000657437 /* CodeTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeTemplateTests.m; sourceTree = "<group>"; };
+		F15B75371CBF2EE000657437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15B753C1CBF2EE000657437 /* CodeTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15B75401CBF2EE000657437 /* CodeTemplateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeTemplateUITests.m; sourceTree = "<group>"; };
+		F15B75421CBF2EE000657437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15B75541CBF345200657437 /* MainRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainRouteViewController.h; path = MainRouteView/MainRouteViewController.h; sourceTree = "<group>"; };
+		F15B75551CBF345200657437 /* MainRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainRouteViewController.m; path = MainRouteView/MainRouteViewController.m; sourceTree = "<group>"; };
+		F15B75561CBF345200657437 /* MainRouteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainRouteViewController.xib; path = MainRouteView/MainRouteViewController.xib; sourceTree = "<group>"; };
+		F15B755C1CBF3DEC00657437 /* TemplateUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemplateUtility.h; path = TemplateUtility/TemplateUtility.h; sourceTree = "<group>"; };
+		F15B755D1CBF3DEC00657437 /* TemplateUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemplateUtility.m; path = TemplateUtility/TemplateUtility.m; sourceTree = "<group>"; };
+		F15B755F1CBF479D00657437 /* TemplateViewControllerProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateViewControllerProtocal.h; sourceTree = "<group>"; };
+		F15B75621CBF487100657437 /* ActivityTemplateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityTemplateController.h; path = Templates/ActivityTemplate/ActivityTemplateController.h; sourceTree = "<group>"; };
+		F15B75631CBF487100657437 /* ActivityTemplateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityTemplateController.m; path = Templates/ActivityTemplate/ActivityTemplateController.m; sourceTree = "<group>"; };
+		F15B75641CBF487100657437 /* ActivityTemplateController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActivityTemplateController.xib; path = Templates/ActivityTemplate/ActivityTemplateController.xib; sourceTree = "<group>"; };
+		F15B75681CBF494300657437 /* ActivityItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityItem.h; path = Templates/ActivityTemplate/ActivityItem.h; sourceTree = "<group>"; };
+		F15B75691CBF494300657437 /* ActivityItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityItem.m; path = Templates/ActivityTemplate/ActivityItem.m; sourceTree = "<group>"; };
+		F15B756B1CBF4BBC00657437 /* Homer.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Homer.pch; sourceTree = "<group>"; };
+		F15B756C1CBF4D2200657437 /* GlobalAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalAttributes.h; sourceTree = "<group>"; };
+		F19ACE141CCD2EA500108321 /* KeyboardInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardInputViewController.h; path = Templates/KeyboardInput/KeyboardInputViewController.h; sourceTree = "<group>"; };
+		F19ACE151CCD2EA500108321 /* KeyboardInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardInputViewController.m; path = Templates/KeyboardInput/KeyboardInputViewController.m; sourceTree = "<group>"; };
+		F19ACE161CCD2EA500108321 /* KeyboardInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KeyboardInputViewController.xib; path = Templates/KeyboardInput/KeyboardInputViewController.xib; sourceTree = "<group>"; };
+		F19ACE1A1CCD2EDE00108321 /* HInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HInputViewController.h; path = Templates/KeyboardInput/HInputViewController/HInputViewController.h; sourceTree = "<group>"; };
+		F19ACE1B1CCD2EDE00108321 /* HInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HInputViewController.m; path = Templates/KeyboardInput/HInputViewController/HInputViewController.m; sourceTree = "<group>"; };
+		F19ACE1C1CCD2EDE00108321 /* HInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HInputViewController.xib; path = Templates/KeyboardInput/HInputViewController/HInputViewController.xib; sourceTree = "<group>"; };
+		F1C7E4301CC2BF66008F3340 /* ComponentsTemplateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComponentsTemplateController.h; path = Templates/ComponentsTemplate/ComponentsTemplateController.h; sourceTree = "<group>"; };
+		F1C7E4311CC2BF66008F3340 /* ComponentsTemplateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComponentsTemplateController.m; path = Templates/ComponentsTemplate/ComponentsTemplateController.m; sourceTree = "<group>"; };
+		F1C7E4321CC2BF66008F3340 /* ComponentsTemplateController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ComponentsTemplateController.xib; path = Templates/ComponentsTemplate/ComponentsTemplateController.xib; sourceTree = "<group>"; };
+		F1C7E4351CC2C139008F3340 /* CustomizedLayoutCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomizedLayoutCollectionViewController.h; path = Templates/CustomizedLayoutCollection/CustomizedLayoutCollectionViewController.h; sourceTree = "<group>"; };
+		F1C7E4361CC2C139008F3340 /* CustomizedLayoutCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomizedLayoutCollectionViewController.m; path = Templates/CustomizedLayoutCollection/CustomizedLayoutCollectionViewController.m; sourceTree = "<group>"; };
+		F1C7E4371CC2C139008F3340 /* CustomizedLayoutCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomizedLayoutCollectionViewController.xib; path = Templates/CustomizedLayoutCollection/CustomizedLayoutCollectionViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F15B75121CBF2EE000657437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15B752E1CBF2EE000657437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15B75391CBF2EE000657437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F111C6711CC88A2000392364 /* Keyboard Input */ = {
+			isa = PBXGroup;
+			children = (
+				F19ACE191CCD2EA900108321 /* HInputViewController */,
+				F19ACE141CCD2EA500108321 /* KeyboardInputViewController.h */,
+				F19ACE151CCD2EA500108321 /* KeyboardInputViewController.m */,
+				F19ACE161CCD2EA500108321 /* KeyboardInputViewController.xib */,
+			);
+			name = "Keyboard Input";
+			sourceTree = "<group>";
+		};
+		F15B750C1CBF2EE000657437 = {
+			isa = PBXGroup;
+			children = (
+				F15B75601CBF480B00657437 /* Templates */,
+				F15B755B1CBF3D3A00657437 /* Template Utility */,
+				F15B754E1CBF331F00657437 /* Main Table */,
+				F15B75171CBF2EE000657437 /* CodeTemplate */,
+				F15B75341CBF2EE000657437 /* CodeTemplateTests */,
+				F15B753F1CBF2EE000657437 /* CodeTemplateUITests */,
+				F15B75161CBF2EE000657437 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F15B75161CBF2EE000657437 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F15B75151CBF2EE000657437 /* CodeTemplate.app */,
+				F15B75311CBF2EE000657437 /* CodeTemplateTests.xctest */,
+				F15B753C1CBF2EE000657437 /* CodeTemplateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F15B75171CBF2EE000657437 /* CodeTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				F15B751B1CBF2EE000657437 /* AppDelegate.h */,
+				F15B751C1CBF2EE000657437 /* AppDelegate.m */,
+				F15B751E1CBF2EE000657437 /* ViewController.h */,
+				F15B751F1CBF2EE000657437 /* ViewController.m */,
+				F15B75211CBF2EE000657437 /* Main.storyboard */,
+				F15B75271CBF2EE000657437 /* Assets.xcassets */,
+				F15B75291CBF2EE000657437 /* LaunchScreen.storyboard */,
+				F15B752C1CBF2EE000657437 /* Info.plist */,
+				F15B75241CBF2EE000657437 /* CodeTemplate.xcdatamodeld */,
+				F15B75181CBF2EE000657437 /* Supporting Files */,
+			);
+			path = CodeTemplate;
+			sourceTree = "<group>";
+		};
+		F15B75181CBF2EE000657437 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F15B75191CBF2EE000657437 /* main.m */,
+				F15B756B1CBF4BBC00657437 /* Homer.pch */,
+				F15B756C1CBF4D2200657437 /* GlobalAttributes.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F15B75341CBF2EE000657437 /* CodeTemplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				F15B75351CBF2EE000657437 /* CodeTemplateTests.m */,
+				F15B75371CBF2EE000657437 /* Info.plist */,
+			);
+			path = CodeTemplateTests;
+			sourceTree = "<group>";
+		};
+		F15B753F1CBF2EE000657437 /* CodeTemplateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F15B75401CBF2EE000657437 /* CodeTemplateUITests.m */,
+				F15B75421CBF2EE000657437 /* Info.plist */,
+			);
+			path = CodeTemplateUITests;
+			sourceTree = "<group>";
+		};
+		F15B754E1CBF331F00657437 /* Main Table */ = {
+			isa = PBXGroup;
+			children = (
+				F15B75541CBF345200657437 /* MainRouteViewController.h */,
+				F15B75551CBF345200657437 /* MainRouteViewController.m */,
+				F15B75561CBF345200657437 /* MainRouteViewController.xib */,
+			);
+			name = "Main Table";
+			sourceTree = "<group>";
+		};
+		F15B755B1CBF3D3A00657437 /* Template Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F15B755C1CBF3DEC00657437 /* TemplateUtility.h */,
+				F15B755D1CBF3DEC00657437 /* TemplateUtility.m */,
+				F15B755F1CBF479D00657437 /* TemplateViewControllerProtocal.h */,
+			);
+			name = "Template Utility";
+			sourceTree = "<group>";
+		};
+		F15B75601CBF480B00657437 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				F111C6711CC88A2000392364 /* Keyboard Input */,
+				F1C7E42A1CC2BEB9008F3340 /* Customized Layout CollectionView */,
+				F1C7E4241CC2B7B5008F3340 /* UIComponents Template */,
+				F15B75611CBF481A00657437 /* Activity Template */,
+			);
+			name = Templates;
+			sourceTree = "<group>";
+		};
+		F15B75611CBF481A00657437 /* Activity Template */ = {
+			isa = PBXGroup;
+			children = (
+				F15B75671CBF487D00657437 /* ActivityItem */,
+				F15B75621CBF487100657437 /* ActivityTemplateController.h */,
+				F15B75631CBF487100657437 /* ActivityTemplateController.m */,
+				F15B75641CBF487100657437 /* ActivityTemplateController.xib */,
+			);
+			name = "Activity Template";
+			sourceTree = "<group>";
+		};
+		F15B75671CBF487D00657437 /* ActivityItem */ = {
+			isa = PBXGroup;
+			children = (
+				F15B75681CBF494300657437 /* ActivityItem.h */,
+				F15B75691CBF494300657437 /* ActivityItem.m */,
+			);
+			name = ActivityItem;
+			sourceTree = "<group>";
+		};
+		F19ACE191CCD2EA900108321 /* HInputViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F19ACE1A1CCD2EDE00108321 /* HInputViewController.h */,
+				F19ACE1B1CCD2EDE00108321 /* HInputViewController.m */,
+				F19ACE1C1CCD2EDE00108321 /* HInputViewController.xib */,
+			);
+			name = HInputViewController;
+			sourceTree = "<group>";
+		};
+		F1C7E4241CC2B7B5008F3340 /* UIComponents Template */ = {
+			isa = PBXGroup;
+			children = (
+				F1C7E4301CC2BF66008F3340 /* ComponentsTemplateController.h */,
+				F1C7E4311CC2BF66008F3340 /* ComponentsTemplateController.m */,
+				F1C7E4321CC2BF66008F3340 /* ComponentsTemplateController.xib */,
+			);
+			name = "UIComponents Template";
+			sourceTree = "<group>";
+		};
+		F1C7E42A1CC2BEB9008F3340 /* Customized Layout CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F1C7E4351CC2C139008F3340 /* CustomizedLayoutCollectionViewController.h */,
+				F1C7E4361CC2C139008F3340 /* CustomizedLayoutCollectionViewController.m */,
+				F1C7E4371CC2C139008F3340 /* CustomizedLayoutCollectionViewController.xib */,
+			);
+			name = "Customized Layout CollectionView";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F15B75141CBF2EE000657437 /* CodeTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15B75451CBF2EE000657437 /* Build configuration list for PBXNativeTarget "CodeTemplate" */;
+			buildPhases = (
+				F15B75111CBF2EE000657437 /* Sources */,
+				F15B75121CBF2EE000657437 /* Frameworks */,
+				F15B75131CBF2EE000657437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeTemplate;
+			productName = CodeTemplate;
+			productReference = F15B75151CBF2EE000657437 /* CodeTemplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F15B75301CBF2EE000657437 /* CodeTemplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15B75481CBF2EE000657437 /* Build configuration list for PBXNativeTarget "CodeTemplateTests" */;
+			buildPhases = (
+				F15B752D1CBF2EE000657437 /* Sources */,
+				F15B752E1CBF2EE000657437 /* Frameworks */,
+				F15B752F1CBF2EE000657437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F15B75331CBF2EE000657437 /* PBXTargetDependency */,
+			);
+			name = CodeTemplateTests;
+			productName = CodeTemplateTests;
+			productReference = F15B75311CBF2EE000657437 /* CodeTemplateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F15B753B1CBF2EE000657437 /* CodeTemplateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15B754B1CBF2EE000657437 /* Build configuration list for PBXNativeTarget "CodeTemplateUITests" */;
+			buildPhases = (
+				F15B75381CBF2EE000657437 /* Sources */,
+				F15B75391CBF2EE000657437 /* Frameworks */,
+				F15B753A1CBF2EE000657437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F15B753E1CBF2EE000657437 /* PBXTargetDependency */,
+			);
+			name = CodeTemplateUITests;
+			productName = CodeTemplateUITests;
+			productReference = F15B753C1CBF2EE000657437 /* CodeTemplateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F15B750D1CBF2EE000657437 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Hongming Zuo";
+				TargetAttributes = {
+					F15B75141CBF2EE000657437 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8GQ989BHEA;
+					};
+					F15B75301CBF2EE000657437 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F15B75141CBF2EE000657437;
+					};
+					F15B753B1CBF2EE000657437 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F15B75141CBF2EE000657437;
+					};
+				};
+			};
+			buildConfigurationList = F15B75101CBF2EE000657437 /* Build configuration list for PBXProject "CodeTemplate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F15B750C1CBF2EE000657437;
+			productRefGroup = F15B75161CBF2EE000657437 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F15B75141CBF2EE000657437 /* CodeTemplate */,
+				F15B75301CBF2EE000657437 /* CodeTemplateTests */,
+				F15B753B1CBF2EE000657437 /* CodeTemplateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F15B75131CBF2EE000657437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19ACE1E1CCD2EDE00108321 /* HInputViewController.xib in Resources */,
+				F19ACE181CCD2EA500108321 /* KeyboardInputViewController.xib in Resources */,
+				F1C7E4341CC2BF66008F3340 /* ComponentsTemplateController.xib in Resources */,
+				F15B752B1CBF2EE000657437 /* LaunchScreen.storyboard in Resources */,
+				F1C7E4391CC2C139008F3340 /* CustomizedLayoutCollectionViewController.xib in Resources */,
+				F15B75281CBF2EE000657437 /* Assets.xcassets in Resources */,
+				F15B75661CBF487100657437 /* ActivityTemplateController.xib in Resources */,
+				F15B75231CBF2EE000657437 /* Main.storyboard in Resources */,
+				F15B75581CBF345200657437 /* MainRouteViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15B752F1CBF2EE000657437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15B753A1CBF2EE000657437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F15B75111CBF2EE000657437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15B75261CBF2EE000657437 /* CodeTemplate.xcdatamodeld in Sources */,
+				F1C7E4381CC2C139008F3340 /* CustomizedLayoutCollectionViewController.m in Sources */,
+				F1C7E4331CC2BF66008F3340 /* ComponentsTemplateController.m in Sources */,
+				F15B75571CBF345200657437 /* MainRouteViewController.m in Sources */,
+				F19ACE1D1CCD2EDE00108321 /* HInputViewController.m in Sources */,
+				F15B75651CBF487100657437 /* ActivityTemplateController.m in Sources */,
+				F15B755E1CBF3DEC00657437 /* TemplateUtility.m in Sources */,
+				F15B75201CBF2EE000657437 /* ViewController.m in Sources */,
+				F15B756A1CBF494300657437 /* ActivityItem.m in Sources */,
+				F15B751D1CBF2EE000657437 /* AppDelegate.m in Sources */,
+				F19ACE171CCD2EA500108321 /* KeyboardInputViewController.m in Sources */,
+				F15B751A1CBF2EE000657437 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15B752D1CBF2EE000657437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15B75361CBF2EE000657437 /* CodeTemplateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15B75381CBF2EE000657437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15B75411CBF2EE000657437 /* CodeTemplateUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F15B75331CBF2EE000657437 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F15B75141CBF2EE000657437 /* CodeTemplate */;
+			targetProxy = F15B75321CBF2EE000657437 /* PBXContainerItemProxy */;
+		};
+		F15B753E1CBF2EE000657437 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F15B75141CBF2EE000657437 /* CodeTemplate */;
+			targetProxy = F15B753D1CBF2EE000657437 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F15B75211CBF2EE000657437 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F15B75221CBF2EE000657437 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F15B75291CBF2EE000657437 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F15B752A1CBF2EE000657437 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F15B75431CBF2EE000657437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F15B75441CBF2EE000657437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F15B75461CBF2EE000657437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CodeTemplate/Homer.pch;
+				INFOPLIST_FILE = CodeTemplate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Homerzuo.CodeTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F15B75471CBF2EE000657437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CodeTemplate/Homer.pch;
+				INFOPLIST_FILE = CodeTemplate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Homerzuo.CodeTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F15B75491CBF2EE000657437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CodeTemplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Homerzuo.CodeTemplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeTemplate.app/CodeTemplate";
+			};
+			name = Debug;
+		};
+		F15B754A1CBF2EE000657437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CodeTemplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Homerzuo.CodeTemplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeTemplate.app/CodeTemplate";
+			};
+			name = Release;
+		};
+		F15B754C1CBF2EE000657437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CodeTemplateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Homerzuo.CodeTemplateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CodeTemplate;
+			};
+			name = Debug;
+		};
+		F15B754D1CBF2EE000657437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CodeTemplateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Homerzuo.CodeTemplateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CodeTemplate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F15B75101CBF2EE000657437 /* Build configuration list for PBXProject "CodeTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15B75431CBF2EE000657437 /* Debug */,
+				F15B75441CBF2EE000657437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15B75451CBF2EE000657437 /* Build configuration list for PBXNativeTarget "CodeTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15B75461CBF2EE000657437 /* Debug */,
+				F15B75471CBF2EE000657437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15B75481CBF2EE000657437 /* Build configuration list for PBXNativeTarget "CodeTemplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15B75491CBF2EE000657437 /* Debug */,
+				F15B754A1CBF2EE000657437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15B754B1CBF2EE000657437 /* Build configuration list for PBXNativeTarget "CodeTemplateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15B754C1CBF2EE000657437 /* Debug */,
+				F15B754D1CBF2EE000657437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F15B75241CBF2EE000657437 /* CodeTemplate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F15B75251CBF2EE000657437 /* CodeTemplate.xcdatamodel */,
+			);
+			currentVersion = F15B75251CBF2EE000657437 /* CodeTemplate.xcdatamodel */;
+			path = CodeTemplate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F15B750D1CBF2EE000657437 /* Project object */;
+}

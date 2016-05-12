@@ -1,0 +1,19 @@
+//
+//  Homer.pch
+//  CodeTemplate
+//
+//  Created by Hongming Zuo on 2016-04-13.
+//  Copyright © 2016 Hongming Zuo. All rights reserved.
+//
+
+#ifndef Homer_pch
+#define Homer_pch
+
+#import "GlobalAttributes.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#endif /* Homer_pch */
