@@ -31,10 +31,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    CGRect mainFrame = [[[UIApplication sharedApplication]delegate]window].bounds;
+
     [self.sendButton.layer setCornerRadius:4.0];
-    [self initialTextView];
-    [self initialPosition];
+    [self initialTextViewWithSize:mainFrame.size];
+    [self updatePositionWithSize:mainFrame.size];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,20 +43,28 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)initialTextView{
+-(void)initialTextViewWithSize:(CGSize) size{
     [self.textViewContainer.layer setCornerRadius:5.0];
-    self.inputText.autocorrectionType = UITextAutocorrectionTypeNo;
+    //self.inputText.autocorrectionType = UITextAutocorrectionTypeNo;
+    [self updateTextTextViewWithSize:size];
     if (![self.textViewContainer superview]) {
-        CGRect mainFrame = [[[UIApplication sharedApplication]delegate]window].bounds;
-        CGRect theFrame = self.textViewContainer.frame;
-        self.textViewContainer.autoresizingMask = UIViewAutoresizingNone;
-        theFrame.origin.y = GapTop;
-        theFrame.origin.x = GapSide;
-        theFrame.size.width = mainFrame.size.width - GapSide * 2.0 - 50.0;
-        theFrame.size.height = InputViewSmallestHeigh;
-        self.textViewContainer.frame = theFrame;
         [self.view addSubview:self.textViewContainer];
     }
+}
+
+-(void)updateTextTextViewWithSize:(CGSize) size{
+    CGRect theFrame = self.textViewContainer.frame;
+    self.textViewContainer.autoresizingMask = UIViewAutoresizingNone;
+    theFrame.origin.y = GapTop;
+    theFrame.origin.x = GapSide;
+    theFrame.size.width = size.width - GapSide * 2.0 - (self.sendButton.bounds.size.width + GapSide);
+    theFrame.size.height = InputViewSmallestHeigh;
+    self.textViewContainer.frame = theFrame;
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillChangeFrameNotification object:nil];
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -63,13 +72,12 @@
     [[NSNotificationCenter defaultCenter]removeObserver:self];
 }
 
--(void)initialPosition{
-    CGRect mainFrame = [[[UIApplication sharedApplication]delegate]window].bounds;
+-(void)updatePositionWithSize:(CGSize) size{
     CGRect theFrame = self.view.frame;
-    theFrame.size.width = mainFrame.size.width;
+    theFrame.size.width = size.width;
     theFrame.size.height = InputViewSmallestHeigh + GapTop * 2.0;
     theFrame.origin.x = 0.0;
-    theFrame.origin.y = mainFrame.size.height - theFrame.size.height;
+    theFrame.origin.y = size.height - theFrame.size.height;
     if ([self.delegate respondsToSelector:@selector(getInitialOffsetIfNeed)]) {
         theFrame.origin.y += [self.delegate getInitialOffsetIfNeed];
     }
@@ -89,18 +97,15 @@
 #pragma mark - KeyBoard
 
 -(void)keyboardWillShow:(NSNotification *)notification{
-    NSLog(@"Mark");
     CGRect frame = [[notification.userInfo objectForKey:@"UIKeyboardFrameEndUserInfoKey"]CGRectValue];
+    CGAffineTransform transform = self.view.layer.affineTransform;
     CGRect theFrame = self.view.frame;
-    theFrame.origin.y = frame.origin.y-theFrame.size.height;
+    CGFloat move = frame.origin.y - theFrame.size.height - theFrame.origin.y;
+    transform.ty += move;
     if ([self.delegate respondsToSelector:@selector(getKeyBoardUpOffsetIfNeed)]) {
-        theFrame.origin.y += [self.delegate getKeyBoardUpOffsetIfNeed];
+        transform.ty += [self.delegate getKeyBoardUpOffsetIfNeed];
     }
-    [UIView animateWithDuration:0.5 delay:0.2 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        self.view.frame = theFrame;
-    } completion:^(BOOL finished) {
-        
-    }];
+    self.view.layer.affineTransform = transform;
     [self.delegate inputControllerChangeWithFrame:self.view.frame];
 }
 
@@ -126,7 +131,16 @@
                                                              attributes:@{NSFontAttributeName:self.inputText.font}];
     CGFloat theheight = [self textViewHeightForAttributedText:at andWidth:self.inputText.bounds.size.width];
     [self updateInputViewWithNewHeight:theheight];
+    //NSLog(@"%f, ",theheight);
     [self.delegate inputControllerChangeWithFrame:self.view.frame];
+    BOOL hasText = text.length != 0;
+    self.placeHolder.hidden = hasText;
+    [self.sendButton setEnabled:hasText];
+    if (hasText) {
+        [self.sendButton setBackgroundColor:[UIColor colorWithRed:147.0/255.0 green:108.0/255.0 blue:202.0/255.0 alpha:1.0]];
+    }else{
+        [self.sendButton setBackgroundColor:[UIColor colorWithRed:197.0/255.0 green:179.0/255.0 blue:223.0/255.0 alpha:1.0]];
+    }
 }
 
 -(void)updateInputViewWithNewHeight:(CGFloat) height{
@@ -159,6 +173,13 @@
     }
 }
 
+-(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [self updatePositionWithSize:size];
+    [self updateTextTextViewWithSize:size];
+    [self updateInputViewHeightWithText:self.inputText.text];
+}
+
 - (CGFloat)textViewHeightForAttributedText: (NSAttributedString*)text andWidth: (CGFloat)width {
     UITextView *calculationView = [[UITextView alloc] init];
     [calculationView setAttributedText:text];
@@ -171,9 +192,12 @@
     if (textString.length == 0) {
         return;
     }
-    [self.delegate sendMessage:textString];
-    [self.inputText setText:@""];
-    [self updateInputViewHeightWithText:@""];
+    [self.delegate sendMessage:textString withComplete:^(BOOL success) {
+        if (success) {
+            [self.inputText setText:@""];
+            [self updateInputViewHeightWithText:@""];
+        }
+    }];
 }
 
 -(void)dealloc{
