@@ -51,8 +51,9 @@
 
 #pragma mark HInputViewControllerDelegate
 
--(void)sendMessage:(NSString *)message{
+-(void)sendMessage:(NSString *)message withComplete:(void (^)(BOOL))complete{
     [self.messageLabel setText:message];
+    complete(YES);
 }
 
 -(void)inputControllerChangeWithFrame:(CGRect) frame{
