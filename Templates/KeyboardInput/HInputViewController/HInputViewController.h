@@ -50,7 +50,7 @@
  }
  @endcode
  */
-@interface HInputViewController : UIViewController
+@interface HInputViewController : UIViewController<UITextViewDelegate>
 
 @property (nonatomic) IBOutlet UITextView * inputText;
 @property (nonatomic) IBOutlet UIView * textViewContainer;
