@@ -28,13 +28,22 @@ static TemplateUtility *instances = nil;
     [result addObject:[self returnRouteTableDicWithName:@"Activity Share" withControllerName:@"ActivityTemplateController"]];
     [result addObject:[self returnRouteTableDicWithName:@"UI Components" withControllerName:@"ComponentsTemplateController"]];
     [result addObject:[self returnRouteTableDicWithName:@"Key board Input" withControllerName:@"KeyboardInputViewController"]];
-
+    [result addObject:[self returnRouteTableDicWithName:@"Item from Shared Extension" withControllerName:@"ShareExtensionTableViewController"]];
+    
     return result;
 }
 
 -(NSDictionary *)returnRouteTableDicWithName:(NSString *)name withControllerName:(NSString *)cName{
     NSDictionary * dic = @{TYPENAME:name,TYPEVIEWCONTROLLERNAME:cName};
     return dic;
+}
+
+-(NSUserDefaults *)getShareUserDefault{
+    return [[NSUserDefaults alloc] initWithSuiteName:shareGroupIdentity];
+}
+
+-(NSURL *)getSharePathURL{
+    return [[NSFileManager defaultManager]containerURLForSecurityApplicationGroupIdentifier:shareGroupIdentity];
 }
 
 @end

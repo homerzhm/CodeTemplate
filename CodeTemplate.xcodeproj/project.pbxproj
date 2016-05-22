@@ -22,6 +22,11 @@
 		F15B75651CBF487100657437 /* ActivityTemplateController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B75631CBF487100657437 /* ActivityTemplateController.m */; };
 		F15B75661CBF487100657437 /* ActivityTemplateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15B75641CBF487100657437 /* ActivityTemplateController.xib */; };
 		F15B756A1CBF494300657437 /* ActivityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B75691CBF494300657437 /* ActivityItem.m */; };
+		F1606E761CEAB80100D80AC8 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1606E751CEAB80100D80AC8 /* ShareViewController.m */; };
+		F1606E791CEAB80100D80AC8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1606E771CEAB80100D80AC8 /* MainInterface.storyboard */; };
+		F1606E7D1CEAB80100D80AC8 /* CodeTemplateShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F1606E721CEAB80000D80AC8 /* CodeTemplateShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F1606E8B1CEAC05C00D80AC8 /* CTShareMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1606E891CEAC05C00D80AC8 /* CTShareMainViewController.m */; };
+		F1606E8C1CEAC05C00D80AC8 /* CTShareMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1606E8A1CEAC05C00D80AC8 /* CTShareMainViewController.xib */; };
 		F19ACE171CCD2EA500108321 /* KeyboardInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19ACE151CCD2EA500108321 /* KeyboardInputViewController.m */; };
 		F19ACE181CCD2EA500108321 /* KeyboardInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19ACE161CCD2EA500108321 /* KeyboardInputViewController.xib */; };
 		F19ACE1D1CCD2EDE00108321 /* HInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19ACE1B1CCD2EDE00108321 /* HInputViewController.m */; };
@@ -30,6 +35,11 @@
 		F1C7E4341CC2BF66008F3340 /* ComponentsTemplateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1C7E4321CC2BF66008F3340 /* ComponentsTemplateController.xib */; };
 		F1C7E4381CC2C139008F3340 /* CustomizedLayoutCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C7E4361CC2C139008F3340 /* CustomizedLayoutCollectionViewController.m */; };
 		F1C7E4391CC2C139008F3340 /* CustomizedLayoutCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1C7E4371CC2C139008F3340 /* CustomizedLayoutCollectionViewController.xib */; };
+		F1CD2D191CF108AE0081DB67 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CD2D181CF108AE0081DB67 /* MobileCoreServices.framework */; };
+		F1EFFE991CF13A7200D87B53 /* ShareExtensionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFFE971CF13A7200D87B53 /* ShareExtensionTableViewController.m */; };
+		F1EFFE9A1CF13A7200D87B53 /* ShareExtensionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1EFFE981CF13A7200D87B53 /* ShareExtensionTableViewController.xib */; };
+		F1EFFE9E1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFFE9C1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.m */; };
+		F1EFFE9F1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1EFFE9D1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +57,28 @@
 			remoteGlobalIDString = F15B75141CBF2EE000657437;
 			remoteInfo = CodeTemplate;
 		};
+		F1606E7B1CEAB80100D80AC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F15B750D1CBF2EE000657437 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1606E711CEAB80000D80AC8;
+			remoteInfo = CodeTemplateShare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1606E811CEAB80100D80AC8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F1606E7D1CEAB80100D80AC8 /* CodeTemplateShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F15B75151CBF2EE000657437 /* CodeTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +111,14 @@
 		F15B75691CBF494300657437 /* ActivityItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityItem.m; path = Templates/ActivityTemplate/ActivityItem.m; sourceTree = "<group>"; };
 		F15B756B1CBF4BBC00657437 /* Homer.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Homer.pch; sourceTree = "<group>"; };
 		F15B756C1CBF4D2200657437 /* GlobalAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalAttributes.h; sourceTree = "<group>"; };
+		F1606E721CEAB80000D80AC8 /* CodeTemplateShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CodeTemplateShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1606E741CEAB80100D80AC8 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		F1606E751CEAB80100D80AC8 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		F1606E781CEAB80100D80AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F1606E7A1CEAB80100D80AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1606E881CEAC05C00D80AC8 /* CTShareMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTShareMainViewController.h; path = ShareMainVC/CTShareMainViewController.h; sourceTree = "<group>"; };
+		F1606E891CEAC05C00D80AC8 /* CTShareMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTShareMainViewController.m; path = ShareMainVC/CTShareMainViewController.m; sourceTree = "<group>"; };
+		F1606E8A1CEAC05C00D80AC8 /* CTShareMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CTShareMainViewController.xib; path = ShareMainVC/CTShareMainViewController.xib; sourceTree = "<group>"; };
 		F19ACE141CCD2EA500108321 /* KeyboardInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardInputViewController.h; path = Templates/KeyboardInput/KeyboardInputViewController.h; sourceTree = "<group>"; };
 		F19ACE151CCD2EA500108321 /* KeyboardInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardInputViewController.m; path = Templates/KeyboardInput/KeyboardInputViewController.m; sourceTree = "<group>"; };
 		F19ACE161CCD2EA500108321 /* KeyboardInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KeyboardInputViewController.xib; path = Templates/KeyboardInput/KeyboardInputViewController.xib; sourceTree = "<group>"; };
@@ -92,6 +131,15 @@
 		F1C7E4351CC2C139008F3340 /* CustomizedLayoutCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomizedLayoutCollectionViewController.h; path = Templates/CustomizedLayoutCollection/CustomizedLayoutCollectionViewController.h; sourceTree = "<group>"; };
 		F1C7E4361CC2C139008F3340 /* CustomizedLayoutCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomizedLayoutCollectionViewController.m; path = Templates/CustomizedLayoutCollection/CustomizedLayoutCollectionViewController.m; sourceTree = "<group>"; };
 		F1C7E4371CC2C139008F3340 /* CustomizedLayoutCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomizedLayoutCollectionViewController.xib; path = Templates/CustomizedLayoutCollection/CustomizedLayoutCollectionViewController.xib; sourceTree = "<group>"; };
+		F1CD2D151CF0F15A0081DB67 /* CodeTemplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CodeTemplate.entitlements; sourceTree = "<group>"; };
+		F1CD2D161CF0F1BF0081DB67 /* CodeTemplateShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CodeTemplateShare.entitlements; sourceTree = "<group>"; };
+		F1CD2D181CF108AE0081DB67 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F1EFFE961CF13A7200D87B53 /* ShareExtensionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareExtensionTableViewController.h; path = Templates/ShareExtensionTable/ShareExtensionTableViewController.h; sourceTree = "<group>"; };
+		F1EFFE971CF13A7200D87B53 /* ShareExtensionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShareExtensionTableViewController.m; path = Templates/ShareExtensionTable/ShareExtensionTableViewController.m; sourceTree = "<group>"; };
+		F1EFFE981CF13A7200D87B53 /* ShareExtensionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShareExtensionTableViewController.xib; path = Templates/ShareExtensionTable/ShareExtensionTableViewController.xib; sourceTree = "<group>"; };
+		F1EFFE9B1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareExtensionItemTableViewCell.h; path = Templates/ShareExtensionTable/ShareExtensionItemTableViewCell.h; sourceTree = "<group>"; };
+		F1EFFE9C1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShareExtensionItemTableViewCell.m; path = Templates/ShareExtensionTable/ShareExtensionItemTableViewCell.m; sourceTree = "<group>"; };
+		F1EFFE9D1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShareExtensionItemTableViewCell.xib; path = Templates/ShareExtensionTable/ShareExtensionItemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +164,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1606E6F1CEAB80000D80AC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CD2D191CF108AE0081DB67 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -133,12 +189,14 @@
 		F15B750C1CBF2EE000657437 = {
 			isa = PBXGroup;
 			children = (
+				F1CD2D181CF108AE0081DB67 /* MobileCoreServices.framework */,
 				F15B75601CBF480B00657437 /* Templates */,
 				F15B755B1CBF3D3A00657437 /* Template Utility */,
 				F15B754E1CBF331F00657437 /* Main Table */,
 				F15B75171CBF2EE000657437 /* CodeTemplate */,
 				F15B75341CBF2EE000657437 /* CodeTemplateTests */,
 				F15B753F1CBF2EE000657437 /* CodeTemplateUITests */,
+				F1606E731CEAB80100D80AC8 /* CodeTemplateShare */,
 				F15B75161CBF2EE000657437 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,6 +207,7 @@
 				F15B75151CBF2EE000657437 /* CodeTemplate.app */,
 				F15B75311CBF2EE000657437 /* CodeTemplateTests.xctest */,
 				F15B753C1CBF2EE000657437 /* CodeTemplateUITests.xctest */,
+				F1606E721CEAB80000D80AC8 /* CodeTemplateShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +215,7 @@
 		F15B75171CBF2EE000657437 /* CodeTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				F1CD2D151CF0F15A0081DB67 /* CodeTemplate.entitlements */,
 				F15B751B1CBF2EE000657437 /* AppDelegate.h */,
 				F15B751C1CBF2EE000657437 /* AppDelegate.m */,
 				F15B751E1CBF2EE000657437 /* ViewController.h */,
@@ -221,6 +281,7 @@
 		F15B75601CBF480B00657437 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				F1EFFE951CF139BD00D87B53 /* ShareExtensionTable */,
 				F111C6711CC88A2000392364 /* Keyboard Input */,
 				F1C7E42A1CC2BEB9008F3340 /* Customized Layout CollectionView */,
 				F1C7E4241CC2B7B5008F3340 /* UIComponents Template */,
@@ -247,6 +308,29 @@
 				F15B75691CBF494300657437 /* ActivityItem.m */,
 			);
 			name = ActivityItem;
+			sourceTree = "<group>";
+		};
+		F1606E731CEAB80100D80AC8 /* CodeTemplateShare */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD2D161CF0F1BF0081DB67 /* CodeTemplateShare.entitlements */,
+				F1606E871CEABFE400D80AC8 /* Share view controller */,
+				F1606E741CEAB80100D80AC8 /* ShareViewController.h */,
+				F1606E751CEAB80100D80AC8 /* ShareViewController.m */,
+				F1606E771CEAB80100D80AC8 /* MainInterface.storyboard */,
+				F1606E7A1CEAB80100D80AC8 /* Info.plist */,
+			);
+			path = CodeTemplateShare;
+			sourceTree = "<group>";
+		};
+		F1606E871CEABFE400D80AC8 /* Share view controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1606E881CEAC05C00D80AC8 /* CTShareMainViewController.h */,
+				F1606E891CEAC05C00D80AC8 /* CTShareMainViewController.m */,
+				F1606E8A1CEAC05C00D80AC8 /* CTShareMainViewController.xib */,
+			);
+			name = "Share view controller";
 			sourceTree = "<group>";
 		};
 		F19ACE191CCD2EA900108321 /* HInputViewController */ = {
@@ -279,6 +363,19 @@
 			name = "Customized Layout CollectionView";
 			sourceTree = "<group>";
 		};
+		F1EFFE951CF139BD00D87B53 /* ShareExtensionTable */ = {
+			isa = PBXGroup;
+			children = (
+				F1EFFE961CF13A7200D87B53 /* ShareExtensionTableViewController.h */,
+				F1EFFE971CF13A7200D87B53 /* ShareExtensionTableViewController.m */,
+				F1EFFE981CF13A7200D87B53 /* ShareExtensionTableViewController.xib */,
+				F1EFFE9B1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.h */,
+				F1EFFE9C1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.m */,
+				F1EFFE9D1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.xib */,
+			);
+			name = ShareExtensionTable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -289,10 +386,12 @@
 				F15B75111CBF2EE000657437 /* Sources */,
 				F15B75121CBF2EE000657437 /* Frameworks */,
 				F15B75131CBF2EE000657437 /* Resources */,
+				F1606E811CEAB80100D80AC8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F1606E7C1CEAB80100D80AC8 /* PBXTargetDependency */,
 			);
 			name = CodeTemplate;
 			productName = CodeTemplate;
@@ -335,6 +434,23 @@
 			productReference = F15B753C1CBF2EE000657437 /* CodeTemplateUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F1606E711CEAB80000D80AC8 /* CodeTemplateShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1606E801CEAB80100D80AC8 /* Build configuration list for PBXNativeTarget "CodeTemplateShare" */;
+			buildPhases = (
+				F1606E6E1CEAB80000D80AC8 /* Sources */,
+				F1606E6F1CEAB80000D80AC8 /* Frameworks */,
+				F1606E701CEAB80000D80AC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeTemplateShare;
+			productName = CodeTemplateShare;
+			productReference = F1606E721CEAB80000D80AC8 /* CodeTemplateShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -347,6 +463,11 @@
 					F15B75141CBF2EE000657437 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 8GQ989BHEA;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F15B75301CBF2EE000657437 = {
 						CreatedOnToolsVersion = 7.3;
@@ -355,6 +476,15 @@
 					F15B753B1CBF2EE000657437 = {
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = F15B75141CBF2EE000657437;
+					};
+					F1606E711CEAB80000D80AC8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8GQ989BHEA;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -372,6 +502,7 @@
 			projectRoot = "";
 			targets = (
 				F15B75141CBF2EE000657437 /* CodeTemplate */,
+				F1606E711CEAB80000D80AC8 /* CodeTemplateShare */,
 				F15B75301CBF2EE000657437 /* CodeTemplateTests */,
 				F15B753B1CBF2EE000657437 /* CodeTemplateUITests */,
 			);
@@ -385,7 +516,9 @@
 			files = (
 				F19ACE1E1CCD2EDE00108321 /* HInputViewController.xib in Resources */,
 				F19ACE181CCD2EA500108321 /* KeyboardInputViewController.xib in Resources */,
+				F1EFFE9F1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.xib in Resources */,
 				F1C7E4341CC2BF66008F3340 /* ComponentsTemplateController.xib in Resources */,
+				F1EFFE9A1CF13A7200D87B53 /* ShareExtensionTableViewController.xib in Resources */,
 				F15B752B1CBF2EE000657437 /* LaunchScreen.storyboard in Resources */,
 				F1C7E4391CC2C139008F3340 /* CustomizedLayoutCollectionViewController.xib in Resources */,
 				F15B75281CBF2EE000657437 /* Assets.xcassets in Resources */,
@@ -409,6 +542,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1606E701CEAB80000D80AC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1606E8C1CEAC05C00D80AC8 /* CTShareMainViewController.xib in Resources */,
+				F1606E791CEAB80100D80AC8 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -419,6 +561,7 @@
 				F15B75261CBF2EE000657437 /* CodeTemplate.xcdatamodeld in Sources */,
 				F1C7E4381CC2C139008F3340 /* CustomizedLayoutCollectionViewController.m in Sources */,
 				F1C7E4331CC2BF66008F3340 /* ComponentsTemplateController.m in Sources */,
+				F1EFFE991CF13A7200D87B53 /* ShareExtensionTableViewController.m in Sources */,
 				F15B75571CBF345200657437 /* MainRouteViewController.m in Sources */,
 				F19ACE1D1CCD2EDE00108321 /* HInputViewController.m in Sources */,
 				F15B75651CBF487100657437 /* ActivityTemplateController.m in Sources */,
@@ -427,6 +570,7 @@
 				F15B756A1CBF494300657437 /* ActivityItem.m in Sources */,
 				F15B751D1CBF2EE000657437 /* AppDelegate.m in Sources */,
 				F19ACE171CCD2EA500108321 /* KeyboardInputViewController.m in Sources */,
+				F1EFFE9E1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.m in Sources */,
 				F15B751A1CBF2EE000657437 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +591,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1606E6E1CEAB80000D80AC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1606E8B1CEAC05C00D80AC8 /* CTShareMainViewController.m in Sources */,
+				F1606E761CEAB80100D80AC8 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -459,6 +612,11 @@
 			isa = PBXTargetDependency;
 			target = F15B75141CBF2EE000657437 /* CodeTemplate */;
 			targetProxy = F15B753D1CBF2EE000657437 /* PBXContainerItemProxy */;
+		};
+		F1606E7C1CEAB80100D80AC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1606E711CEAB80000D80AC8 /* CodeTemplateShare */;
+			targetProxy = F1606E7B1CEAB80100D80AC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -477,6 +635,14 @@
 				F15B752A1CBF2EE000657437 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F1606E771CEAB80100D80AC8 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1606E781CEAB80100D80AC8 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -572,6 +738,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CodeTemplate/CodeTemplate.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -589,6 +756,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CodeTemplate/CodeTemplate.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -648,6 +816,34 @@
 			};
 			name = Release;
 		};
+		F1606E7E1CEAB80100D80AC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CodeTemplateShare/CodeTemplateShare.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CodeTemplateShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Homerzuo.CodeTemplate.CodeTemplateShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F1606E7F1CEAB80100D80AC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CodeTemplateShare/CodeTemplateShare.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CodeTemplateShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Homerzuo.CodeTemplate.CodeTemplateShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -683,6 +879,15 @@
 			buildConfigurations = (
 				F15B754C1CBF2EE000657437 /* Debug */,
 				F15B754D1CBF2EE000657437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1606E801CEAB80100D80AC8 /* Build configuration list for PBXNativeTarget "CodeTemplateShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1606E7E1CEAB80100D80AC8 /* Debug */,
+				F1606E7F1CEAB80100D80AC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

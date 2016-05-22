@@ -8,10 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString * shareGroupIdentity = @"group.Homerzuo.CodeTemplate.shareExtension";
+
+static NSString * ShareItems = @"ShareItems";
+static NSString * ShareItemName = @"ShareItemName";
+static NSString * ShareItemUrl = @"ShareItemUrl";
+
+
 @interface TemplateUtility : NSObject
 
 +(TemplateUtility *)shareInstance;
 
 -(NSMutableArray *)returnRouteTable;
+
+-(NSUserDefaults *)getShareUserDefault;
+-(NSURL *)getSharePathURL;
 
 @end
