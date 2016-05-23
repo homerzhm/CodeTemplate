@@ -93,7 +93,7 @@
     
     UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Success" message:@"Save Success" preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self closeShare:nil];
+        [self.extensionContext completeRequestReturningItems:self.extensionContext.inputItems completionHandler:nil];
     }]];
     [self presentViewController:alert animated:YES completion:^{
         
