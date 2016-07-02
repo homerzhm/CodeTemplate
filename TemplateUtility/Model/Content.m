@@ -27,4 +27,14 @@
     return array;
 }
 
++(Content *)getContentWithId:(NSManagedObjectID *)objectId withContext:(NSManagedObjectContext *)context{
+    NSPredicate * predicate;
+    predicate = [NSPredicate predicateWithFormat:@"self == %@",objectId];
+    NSMutableArray * array =[Content fetchResultsForPredicate:predicate withSortOrdering:@[] withPropertiesToFetch:nil withLimit:0 withResultType:NSManagedObjectResultType inManagedObjectContext:context];
+    if (array.count > 0) {
+        return [array firstObject];
+    }
+    return nil;
+}
+
 @end
