@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LoadNotificationViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,10 @@
     UINavigationController * root = [[UINavigationController alloc]initWithRootViewController:self.main];
     [_window setRootViewController:root];
     return YES;
+}
+
+-(void)setObject:(NSString *)test forKey:(NSString *)Key{
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -45,6 +50,14 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+-(BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler{
+    if ([userActivity.activityType isEqualToString:CSSearchableItemActionType]) {
+        [LoadNotificationViewController showWithUserActivity:userActivity];
+        return YES;
+    }
+    return NO;
 }
 
 #pragma mark - Core Data stack
