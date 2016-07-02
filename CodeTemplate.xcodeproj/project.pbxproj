@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F13EF4D71D0CD240003987A5 /* SpolightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F13EF4D51D0CD240003987A5 /* SpolightViewController.m */; };
+		F13EF4D81D0CD240003987A5 /* SpolightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F13EF4D61D0CD240003987A5 /* SpolightViewController.xib */; };
+		F13EF4DC1D0CD268003987A5 /* SpotlightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F13EF4DA1D0CD268003987A5 /* SpotlightTableViewCell.m */; };
+		F13EF4DD1D0CD268003987A5 /* SpotlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F13EF4DB1D0CD268003987A5 /* SpotlightTableViewCell.xib */; };
+		F13EF4EF1D0CE12B003987A5 /* Content+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F13EF4EC1D0CE12B003987A5 /* Content+CoreDataProperties.m */; };
+		F13EF4F01D0CE12B003987A5 /* Content.m in Sources */ = {isa = PBXBuildFile; fileRef = F13EF4EE1D0CE12B003987A5 /* Content.m */; };
+		F13EF4F31D0CEE4D003987A5 /* BasicManagerdObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F13EF4F21D0CEE4D003987A5 /* BasicManagerdObject.m */; };
+		F13EF4F71D123E43003987A5 /* CircleLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F13EF4F61D123E43003987A5 /* CircleLoadingView.m */; };
 		F15B751A1CBF2EE000657437 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B75191CBF2EE000657437 /* main.m */; };
 		F15B751D1CBF2EE000657437 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B751C1CBF2EE000657437 /* AppDelegate.m */; };
 		F15B75201CBF2EE000657437 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B751F1CBF2EE000657437 /* ViewController.m */; };
@@ -27,6 +35,8 @@
 		F1606E7D1CEAB80100D80AC8 /* CodeTemplateShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F1606E721CEAB80000D80AC8 /* CodeTemplateShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F1606E8B1CEAC05C00D80AC8 /* CTShareMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1606E891CEAC05C00D80AC8 /* CTShareMainViewController.m */; };
 		F1606E8C1CEAC05C00D80AC8 /* CTShareMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1606E8A1CEAC05C00D80AC8 /* CTShareMainViewController.xib */; };
+		F195CBAB1D1B77B100B05FBC /* LoadNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F195CBA91D1B77B100B05FBC /* LoadNotificationViewController.m */; };
+		F195CBAC1D1B77B100B05FBC /* LoadNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F195CBAA1D1B77B100B05FBC /* LoadNotificationViewController.xib */; };
 		F19ACE171CCD2EA500108321 /* KeyboardInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19ACE151CCD2EA500108321 /* KeyboardInputViewController.m */; };
 		F19ACE181CCD2EA500108321 /* KeyboardInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19ACE161CCD2EA500108321 /* KeyboardInputViewController.xib */; };
 		F19ACE1D1CCD2EDE00108321 /* HInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19ACE1B1CCD2EDE00108321 /* HInputViewController.m */; };
@@ -40,6 +50,8 @@
 		F1EFFE9A1CF13A7200D87B53 /* ShareExtensionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1EFFE981CF13A7200D87B53 /* ShareExtensionTableViewController.xib */; };
 		F1EFFE9E1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFFE9C1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.m */; };
 		F1EFFE9F1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1EFFE9D1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.xib */; };
+		F1F6C0611D14B81100E6E371 /* libobjc.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F6C05F1D14B66900E6E371 /* libobjc.A.tbd */; };
+		F1F6C0681D14DB7900E6E371 /* TemplateUtility+TestMethodSwizzied.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6C0671D14DB7900E6E371 /* TemplateUtility+TestMethodSwizzied.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +93,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F13EF4D41D0CD240003987A5 /* SpolightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpolightViewController.h; path = Templates/SpotlightImplement/SpolightViewController.h; sourceTree = "<group>"; };
+		F13EF4D51D0CD240003987A5 /* SpolightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpolightViewController.m; path = Templates/SpotlightImplement/SpolightViewController.m; sourceTree = "<group>"; };
+		F13EF4D61D0CD240003987A5 /* SpolightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SpolightViewController.xib; path = Templates/SpotlightImplement/SpolightViewController.xib; sourceTree = "<group>"; };
+		F13EF4D91D0CD268003987A5 /* SpotlightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpotlightTableViewCell.h; path = Templates/SpotlightImplement/SpotlightTableViewCell.h; sourceTree = "<group>"; };
+		F13EF4DA1D0CD268003987A5 /* SpotlightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpotlightTableViewCell.m; path = Templates/SpotlightImplement/SpotlightTableViewCell.m; sourceTree = "<group>"; };
+		F13EF4DB1D0CD268003987A5 /* SpotlightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SpotlightTableViewCell.xib; path = Templates/SpotlightImplement/SpotlightTableViewCell.xib; sourceTree = "<group>"; };
+		F13EF4EB1D0CE12B003987A5 /* Content+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Content+CoreDataProperties.h"; path = "TemplateUtility/Model/Content+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F13EF4EC1D0CE12B003987A5 /* Content+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Content+CoreDataProperties.m"; path = "TemplateUtility/Model/Content+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F13EF4ED1D0CE12B003987A5 /* Content.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Content.h; path = TemplateUtility/Model/Content.h; sourceTree = "<group>"; };
+		F13EF4EE1D0CE12B003987A5 /* Content.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Content.m; path = TemplateUtility/Model/Content.m; sourceTree = "<group>"; };
+		F13EF4F11D0CEE4D003987A5 /* BasicManagerdObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicManagerdObject.h; path = TemplateUtility/Model/BasicManagerdObject.h; sourceTree = "<group>"; };
+		F13EF4F21D0CEE4D003987A5 /* BasicManagerdObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicManagerdObject.m; path = TemplateUtility/Model/BasicManagerdObject.m; sourceTree = "<group>"; };
+		F13EF4F51D123E43003987A5 /* CircleLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleLoadingView.h; path = Templates/CustomizedLayoutCollection/CircleLoadingView/CircleLoadingView.h; sourceTree = "<group>"; };
+		F13EF4F61D123E43003987A5 /* CircleLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleLoadingView.m; path = Templates/CustomizedLayoutCollection/CircleLoadingView/CircleLoadingView.m; sourceTree = "<group>"; };
 		F15B75151CBF2EE000657437 /* CodeTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15B75191CBF2EE000657437 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F15B751B1CBF2EE000657437 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +145,9 @@
 		F1606E881CEAC05C00D80AC8 /* CTShareMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTShareMainViewController.h; path = ShareMainVC/CTShareMainViewController.h; sourceTree = "<group>"; };
 		F1606E891CEAC05C00D80AC8 /* CTShareMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTShareMainViewController.m; path = ShareMainVC/CTShareMainViewController.m; sourceTree = "<group>"; };
 		F1606E8A1CEAC05C00D80AC8 /* CTShareMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CTShareMainViewController.xib; path = ShareMainVC/CTShareMainViewController.xib; sourceTree = "<group>"; };
+		F195CBA81D1B77B100B05FBC /* LoadNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadNotificationViewController.h; path = Templates/LoadNotificationViewController/LoadNotificationViewController.h; sourceTree = "<group>"; };
+		F195CBA91D1B77B100B05FBC /* LoadNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoadNotificationViewController.m; path = Templates/LoadNotificationViewController/LoadNotificationViewController.m; sourceTree = "<group>"; };
+		F195CBAA1D1B77B100B05FBC /* LoadNotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadNotificationViewController.xib; path = Templates/LoadNotificationViewController/LoadNotificationViewController.xib; sourceTree = "<group>"; };
 		F19ACE141CCD2EA500108321 /* KeyboardInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardInputViewController.h; path = Templates/KeyboardInput/KeyboardInputViewController.h; sourceTree = "<group>"; };
 		F19ACE151CCD2EA500108321 /* KeyboardInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardInputViewController.m; path = Templates/KeyboardInput/KeyboardInputViewController.m; sourceTree = "<group>"; };
 		F19ACE161CCD2EA500108321 /* KeyboardInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KeyboardInputViewController.xib; path = Templates/KeyboardInput/KeyboardInputViewController.xib; sourceTree = "<group>"; };
@@ -140,6 +169,9 @@
 		F1EFFE9B1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareExtensionItemTableViewCell.h; path = Templates/ShareExtensionTable/ShareExtensionItemTableViewCell.h; sourceTree = "<group>"; };
 		F1EFFE9C1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShareExtensionItemTableViewCell.m; path = Templates/ShareExtensionTable/ShareExtensionItemTableViewCell.m; sourceTree = "<group>"; };
 		F1EFFE9D1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShareExtensionItemTableViewCell.xib; path = Templates/ShareExtensionTable/ShareExtensionItemTableViewCell.xib; sourceTree = "<group>"; };
+		F1F6C05F1D14B66900E6E371 /* libobjc.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.A.tbd; path = usr/lib/libobjc.A.tbd; sourceTree = SDKROOT; };
+		F1F6C0661D14DB7900E6E371 /* TemplateUtility+TestMethodSwizzied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TemplateUtility+TestMethodSwizzied.h"; path = "TemplateUtility/Category/TemplateUtility+TestMethodSwizzied.h"; sourceTree = "<group>"; };
+		F1F6C0671D14DB7900E6E371 /* TemplateUtility+TestMethodSwizzied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TemplateUtility+TestMethodSwizzied.m"; path = "TemplateUtility/Category/TemplateUtility+TestMethodSwizzied.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F6C0611D14B81100E6E371 /* libobjc.A.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +219,41 @@
 			name = "Keyboard Input";
 			sourceTree = "<group>";
 		};
+		F13EF4D31D0BB941003987A5 /* SpotlightImplement */ = {
+			isa = PBXGroup;
+			children = (
+				F13EF4D41D0CD240003987A5 /* SpolightViewController.h */,
+				F13EF4D51D0CD240003987A5 /* SpolightViewController.m */,
+				F13EF4D61D0CD240003987A5 /* SpolightViewController.xib */,
+				F13EF4D91D0CD268003987A5 /* SpotlightTableViewCell.h */,
+				F13EF4DA1D0CD268003987A5 /* SpotlightTableViewCell.m */,
+				F13EF4DB1D0CD268003987A5 /* SpotlightTableViewCell.xib */,
+			);
+			name = SpotlightImplement;
+			sourceTree = "<group>";
+		};
+		F13EF4E41D0CE0BB003987A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F13EF4EB1D0CE12B003987A5 /* Content+CoreDataProperties.h */,
+				F13EF4EC1D0CE12B003987A5 /* Content+CoreDataProperties.m */,
+				F13EF4ED1D0CE12B003987A5 /* Content.h */,
+				F13EF4EE1D0CE12B003987A5 /* Content.m */,
+				F13EF4F11D0CEE4D003987A5 /* BasicManagerdObject.h */,
+				F13EF4F21D0CEE4D003987A5 /* BasicManagerdObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F13EF4F41D123DF7003987A5 /* Circling loading view */ = {
+			isa = PBXGroup;
+			children = (
+				F13EF4F51D123E43003987A5 /* CircleLoadingView.h */,
+				F13EF4F61D123E43003987A5 /* CircleLoadingView.m */,
+			);
+			name = "Circling loading view";
+			sourceTree = "<group>";
+		};
 		F15B750C1CBF2EE000657437 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +266,7 @@
 				F15B753F1CBF2EE000657437 /* CodeTemplateUITests */,
 				F1606E731CEAB80100D80AC8 /* CodeTemplateShare */,
 				F15B75161CBF2EE000657437 /* Products */,
+				F1F6C05F1D14B66900E6E371 /* libobjc.A.tbd */,
 			);
 			sourceTree = "<group>";
 		};
@@ -271,6 +340,8 @@
 		F15B755B1CBF3D3A00657437 /* Template Utility */ = {
 			isa = PBXGroup;
 			children = (
+				F1F6C0621D14BF2E00E6E371 /* Catergory */,
+				F13EF4E41D0CE0BB003987A5 /* Model */,
 				F15B755C1CBF3DEC00657437 /* TemplateUtility.h */,
 				F15B755D1CBF3DEC00657437 /* TemplateUtility.m */,
 				F15B755F1CBF479D00657437 /* TemplateViewControllerProtocal.h */,
@@ -281,6 +352,8 @@
 		F15B75601CBF480B00657437 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				F195CBA21D1B773200B05FBC /* LoadNotificationViewController */,
+				F13EF4D31D0BB941003987A5 /* SpotlightImplement */,
 				F1EFFE951CF139BD00D87B53 /* ShareExtensionTable */,
 				F111C6711CC88A2000392364 /* Keyboard Input */,
 				F1C7E42A1CC2BEB9008F3340 /* Customized Layout CollectionView */,
@@ -333,6 +406,16 @@
 			name = "Share view controller";
 			sourceTree = "<group>";
 		};
+		F195CBA21D1B773200B05FBC /* LoadNotificationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F195CBA81D1B77B100B05FBC /* LoadNotificationViewController.h */,
+				F195CBA91D1B77B100B05FBC /* LoadNotificationViewController.m */,
+				F195CBAA1D1B77B100B05FBC /* LoadNotificationViewController.xib */,
+			);
+			name = LoadNotificationViewController;
+			sourceTree = "<group>";
+		};
 		F19ACE191CCD2EA900108321 /* HInputViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +429,7 @@
 		F1C7E4241CC2B7B5008F3340 /* UIComponents Template */ = {
 			isa = PBXGroup;
 			children = (
+				F13EF4F41D123DF7003987A5 /* Circling loading view */,
 				F1C7E4301CC2BF66008F3340 /* ComponentsTemplateController.h */,
 				F1C7E4311CC2BF66008F3340 /* ComponentsTemplateController.m */,
 				F1C7E4321CC2BF66008F3340 /* ComponentsTemplateController.xib */,
@@ -374,6 +458,15 @@
 				F1EFFE9D1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.xib */,
 			);
 			name = ShareExtensionTable;
+			sourceTree = "<group>";
+		};
+		F1F6C0621D14BF2E00E6E371 /* Catergory */ = {
+			isa = PBXGroup;
+			children = (
+				F1F6C0661D14DB7900E6E371 /* TemplateUtility+TestMethodSwizzied.h */,
+				F1F6C0671D14DB7900E6E371 /* TemplateUtility+TestMethodSwizzied.m */,
+			);
+			name = Catergory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,7 +607,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F13EF4D81D0CD240003987A5 /* SpolightViewController.xib in Resources */,
 				F19ACE1E1CCD2EDE00108321 /* HInputViewController.xib in Resources */,
+				F13EF4DD1D0CD268003987A5 /* SpotlightTableViewCell.xib in Resources */,
 				F19ACE181CCD2EA500108321 /* KeyboardInputViewController.xib in Resources */,
 				F1EFFE9F1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.xib in Resources */,
 				F1C7E4341CC2BF66008F3340 /* ComponentsTemplateController.xib in Resources */,
@@ -525,6 +620,7 @@
 				F15B75661CBF487100657437 /* ActivityTemplateController.xib in Resources */,
 				F15B75231CBF2EE000657437 /* Main.storyboard in Resources */,
 				F15B75581CBF345200657437 /* MainRouteViewController.xib in Resources */,
+				F195CBAC1D1B77B100B05FBC /* LoadNotificationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,15 +655,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F15B75261CBF2EE000657437 /* CodeTemplate.xcdatamodeld in Sources */,
+				F13EF4F71D123E43003987A5 /* CircleLoadingView.m in Sources */,
 				F1C7E4381CC2C139008F3340 /* CustomizedLayoutCollectionViewController.m in Sources */,
 				F1C7E4331CC2BF66008F3340 /* ComponentsTemplateController.m in Sources */,
+				F195CBAB1D1B77B100B05FBC /* LoadNotificationViewController.m in Sources */,
 				F1EFFE991CF13A7200D87B53 /* ShareExtensionTableViewController.m in Sources */,
+				F13EF4DC1D0CD268003987A5 /* SpotlightTableViewCell.m in Sources */,
 				F15B75571CBF345200657437 /* MainRouteViewController.m in Sources */,
 				F19ACE1D1CCD2EDE00108321 /* HInputViewController.m in Sources */,
+				F13EF4F01D0CE12B003987A5 /* Content.m in Sources */,
+				F1F6C0681D14DB7900E6E371 /* TemplateUtility+TestMethodSwizzied.m in Sources */,
 				F15B75651CBF487100657437 /* ActivityTemplateController.m in Sources */,
 				F15B755E1CBF3DEC00657437 /* TemplateUtility.m in Sources */,
 				F15B75201CBF2EE000657437 /* ViewController.m in Sources */,
 				F15B756A1CBF494300657437 /* ActivityItem.m in Sources */,
+				F13EF4EF1D0CE12B003987A5 /* Content+CoreDataProperties.m in Sources */,
+				F13EF4F31D0CEE4D003987A5 /* BasicManagerdObject.m in Sources */,
+				F13EF4D71D0CD240003987A5 /* SpolightViewController.m in Sources */,
 				F15B751D1CBF2EE000657437 /* AppDelegate.m in Sources */,
 				F19ACE171CCD2EA500108321 /* KeyboardInputViewController.m in Sources */,
 				F1EFFE9E1CF13B1200D87B53 /* ShareExtensionItemTableViewCell.m in Sources */,

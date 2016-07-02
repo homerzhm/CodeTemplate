@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationItem setTitle:@"CodeTemplate"];
     // Do any additional setup after loading the view from its nib.
 }
 

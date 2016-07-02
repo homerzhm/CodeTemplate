@@ -7,11 +7,14 @@
 //
 
 #import "ComponentsTemplateController.h"
+#import "CircleLoadingView.h"
 
 #define GapBetweenInTop 10.0
 
 @interface ComponentsTemplateController ()
 @property (nonatomic) NSMutableArray * componentArray;
+@property (nonatomic) CircleLoadingView * circleLoading;
+@property (nonatomic) NSTimer * uiTimer;
 @end
 
 @implementation ComponentsTemplateController
@@ -33,6 +36,19 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self refreshScrollView];
+    [self componentTimer];
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    [self.uiTimer invalidate];
+}
+
+-(void)componentTimer{
+    if (!self.uiTimer) {
+        self.uiTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(refreshUIComponent) userInfo:nil repeats:YES];
+        [[NSRunLoop mainRunLoop]addTimer:self.uiTimer forMode:NSDefaultRunLoopMode];
+    }
 }
 
 -(void)initialComponentArray{
@@ -42,6 +58,8 @@
     [self.componentArray addObject:[self strikeThroughLabelWithMainFrame:mainFrame]];
     [self.componentArray addObject:[self underLineLabelWithMainFrame:mainFrame]];
     
+    self.circleLoading = [self circleLoadingView:mainFrame];
+    [self.componentArray addObject:self.circleLoading];
 }
 
 -(UILabel *)strikeThroughLabelWithMainFrame:(CGRect)mainFrame{
@@ -66,6 +84,23 @@
     return result;
 }
 
+-(CircleLoadingView *)circleLoadingView:(CGRect) mainFrame{
+    CircleLoadingView * result = nil;
+    result = [[CircleLoadingView alloc]initWithFrame:CGRectMake(20.0, 0, 100.0, 100.0)];
+    [result customizedBGTint:[UIColor grayColor] progressTint:[UIColor blackColor] isAnnular:YES];
+    return result;
+}
+
+-(void)refreshUIComponent{
+    if (self.circleLoading) {
+        CGFloat process = self.circleLoading.progress;
+        process += 0.01;
+        if (process > 1.0) {
+            process = 0.0;
+        }
+        [self.circleLoading currentProgress:process];
+    }
+}
 
 -(void)refreshScrollView{
     

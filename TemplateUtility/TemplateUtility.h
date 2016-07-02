@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import "Content.h"
 
 static NSString * shareGroupIdentity = @"group.Homerzuo.CodeTemplate.shareExtension";
 
@@ -14,6 +16,7 @@ static NSString * ShareItems = @"ShareItems";
 static NSString * ShareItemName = @"ShareItemName";
 static NSString * ShareItemUrl = @"ShareItemUrl";
 
+static NSString * SpotlightDomain = @"com.CodeTemplate";
 
 @interface TemplateUtility : NSObject
 
@@ -23,5 +26,12 @@ static NSString * ShareItemUrl = @"ShareItemUrl";
 
 -(NSUserDefaults *)getShareUserDefault;
 -(NSURL *)getSharePathURL;
+
+-(NSMutableArray *)getContentArray;
+
+-(NSManagedObjectContext *)coredataManagerContext;
+-(void)saveContext;
+
+
 
 @end
